@@ -70,6 +70,10 @@
                 </div>
             </div>
         </div>
+        <!-- Donate Button -->
+        <div class="text-center mt-4">
+            <a id="donateButton" href="buymeacoffee.com/alathari" class="btn btn-success btn-lg">Donate to Taqwa Youth Association</a>
+        </div>
     </div>
     <!-- Bootstrap JS (for interactivity, optional in this case) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -90,7 +94,8 @@
                 resultMidnight: 'Islamic Midnight is at: ',
                 resultLastThird: 'Last Third of the Night starts at: ',
                 alertEnterTimes: 'Please enter both Maghrib and Fajr times.',
-                languageButton: 'عربي'
+                languageButton: 'عربي',
+                donateButton: 'Donate to Taqwa Youth Association' // Added translation for donate button
             },
             ar: {
                 appTitle: 'حاسبة الوقت الإسلامي',
@@ -105,7 +110,8 @@
                 resultMidnight: 'منتصف الليل الشرعي عند الساعة: ',
                 resultLastThird: 'يبدأ الثلث الأخير من الليل عند الساعة: ',
                 alertEnterTimes: 'يرجى إدخال وقتي المغرب والفجر.',
-                languageButton: 'English'
+                languageButton: 'English',
+                donateButton: 'تبرع لجمعية شباب التقوى' // Added translation for donate button
             }
         };
 
@@ -122,6 +128,7 @@
             document.getElementById('calculationLabel').innerText = t.calculationLabel;
             document.getElementById('calculateButton').innerText = t.calculateButton;
             document.getElementById('languageToggle').innerText = t.languageButton;
+            document.getElementById('donateButton').innerText = t.donateButton; // Update donate button text
 
             // Update calculation type options
             const calculationType = document.getElementById('calculationType');
@@ -215,3 +222,4 @@
     </script>
 </body>
 </html>
+
